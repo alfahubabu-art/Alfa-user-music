@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Telethon / local session artifacts (sessions normally live encrypted in Mongo)
+*.session
+*.session-journal
+sessions/
+
+# Runtime media cache
+media/
+downloads/
+*.part
+*.webm
+*.m4a
+*.opus
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
