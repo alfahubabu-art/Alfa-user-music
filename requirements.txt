@@ -1,0 +1,28 @@
+# ── Runtime: Python 3.11 (see README "Dependency compatibility report") ──
+# Everything is pinned. Bump py-tgcalls + ntgcalls together and re-run `pip check`.
+
+# Control plane (Bot API)
+aiogram==3.31.0
+pydantic>=2.9,<2.14
+pydantic-settings==2.16.2
+
+# Health plane
+fastapi==0.162.0
+uvicorn==0.54.0
+
+# Playback plane (MTProto) — Telethon, NOT pyrogram (archived Dec 2024)
+telethon==1.45.0
+cryptg>=0.4.6
+py-tgcalls==3.0.0
+ntgcalls==3.0.0
+
+# Persistence — pymongo async client (Motor reached EOL 2026-05-14)
+pymongo==4.19.0
+dnspython>=2.7,<3.0
+
+# Security
+cryptography>=47.0.0,<48.0.0
+
+# Media
+yt-dlp>=2025.1.1,<2027.1.1
+aiofiles>=24.1.0
